@@ -1,5 +1,6 @@
 var fs = require("fs");
 var Handlebars = require("handlebars");
+const moment = require('moment');
 
 COURSES_COLUMNS = 3;
 
@@ -13,6 +14,16 @@ PREPEND_SUMMARY_CATEGORIES = [
 function validateArray(arr) {
   return arr !== undefined && arr !== null && arr instanceof Array && arr.length > 0;
 }
+
+const dateHelpers = {
+  MY: date => moment(date.toString(), ['YYYY-MM-DD']).format('MMMM YYYY'),
+  Y: date => moment(date.toString(), ['YYYY-MM-DD']).format('YYYY'),
+  DMY: date => moment(date.toString(), ['YYYY-MM-DD']).format('D MMMM YYYY')
+};
+
+Handlebars.registerHelper('MY', dateHelpers.MY);
+Handlebars.registerHelper('Y', dateHelpers.Y);
+Handlebars.registerHelper('DMY', dateHelpers.DMY);
 
 function render(resume) {
   // Split courses into 3 columns

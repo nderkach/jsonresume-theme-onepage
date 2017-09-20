@@ -1,8 +1,7 @@
 body {
-  background: #EEEEEE;
-  font: 12px "Times New Roman", Times, sans-serif;
+  background: #fff;
+  font: "Helvetica Neue", sans-serif;
   line-height: 1.4;
-  margin: 40px 0;
 }
 em {
   color: #999;
@@ -23,11 +22,14 @@ a {
 #resume {
   margin: 0 auto;
   max-width: 600px;
-  padding: 80px 100px;
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 4px #aaa;
   -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+#innerResume {
+  padding: 0px 20px 0px 20px;
 }
 
 .coursesList {
@@ -37,11 +39,21 @@ a {
 }
 
 .largeFont {
+  font-size: 14px;
+}
+
+#nameBlock {
   font-size: 20px;
 }
 
 .smallFont {
   font-size: 12px;
+}
+
+.date {
+  margin-top: 3px;
+  margin-right: 2px;
+  font-size: 10px;
 }
 
 .sectionBlock {
@@ -50,20 +62,20 @@ a {
 }
 
 .sectionName {
-  width: 18%;
+  width: 8%;
   vertical-align: top;
   display: inline-block;
 }
 
 .sectionContent {
-  width: 80%;
+  width: 100%;
   vertical-align: top;
   display: inline-block;
 }
 
 .sectionContent ul {
   padding-left: 20px;
-  margin-top: 6px;
+  margin-top: 0px;
   list-style-type: circle;
 }
 
@@ -76,15 +88,15 @@ a {
 }
 
 .sectionContent .separator {
-  height: 14px;
+  height: 2px;
 }
 
 .sectionLine {
   border-style: dashed;
   border-width: 1px;
   border-color: #CFCFCF;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .divider {
@@ -94,11 +106,11 @@ a {
 }
 
 .summary {
-  margin-top: 6px;
+  margin-top: 0px;
 }
 
 .skillBlock {
-  margin-bottom: 4px;
+  margin-bottom: 0px;
 }
 
 .jobBlock {
@@ -109,7 +121,6 @@ a {
 @media only screen and (max-width: 40em) {
   body {
     margin: 0;
-    font-size: 14px;
   }
   #resume {
     margin: 0 auto;

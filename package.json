@@ -1,21 +1,22 @@
 {
-  "name": "jsonresume-theme-onepage",
-  "version": "0.0.3",
+  "name": "jsonresume-theme-onepage-nderkach",
+  "version": "0.0.4",
   "description": "Compact, printable theme for JSON Resume",
-  "author": "Ainsley Chong",
+  "author": "Nikolay Derkach",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainsleychong/jsonresume-theme-onepage.git"
+    "url": "https://github.com/nderkach/jsonresume-theme-onepage.git"
   },
   "license": "MIT",
   "dependencies": {
+    "css": "2.2.x",
     "handlebars": "^2.0.0-alpha.4",
-    "css": "2.2.x"
+    "moment": "^2.18.1"
   },
   "bugs": {
-    "url": "https://github.com/ainsleychong/jsonresume-theme-onepage/issues"
+    "url": "https://github.com/nderkach/jsonresume-theme-onepage/issues"
   },
-  "homepage": "https://github.com/ainsleychong/jsonresume-theme-onepage",
+  "homepage": "https://github.com/nderkach/jsonresume-theme-onepage",
   "main": "index.js",
   "devDependencies": {}
 }
